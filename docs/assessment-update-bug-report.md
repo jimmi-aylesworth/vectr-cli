@@ -25,15 +25,14 @@ the `assessment.update` resolver specifically.
 | Component | VECTR GraphQL API |
 | Endpoint | `https://<vectr_host>/sra-purpletools-rest/graphql` |
 | Auth | API Key v1.0 (`Authorization: VEC1 <key_id>:<key_secret>`) |
-| Edition / Version | *(fill in — see "Version note" below)* |
+| Edition / Version | *VECTR 9.13.1* |
 | Environment (db) | e.g. `Developer_TST` |
 | Client | Direct GraphQL `POST` (reproduced via cURL and a Python client) |
 
 > **Version note:** `vectrAppConfig { version }` returns
 > `Field 'version' in type 'VectrAppConfig' is undefined` on this build, so the
-> version could not be read that way. Please substitute the build/version from
-> your deployment (e.g. the Docker image tag or the version shown in the UI
-> footer).
+> version could not be read that way. Instead, the build/version was taken from
+> my deployment via the help menu.
 
 ## Steps to Reproduce
 
