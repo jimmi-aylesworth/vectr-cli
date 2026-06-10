@@ -1,0 +1,2 @@
+# VECTR API CLI dependencies
+requests>=2.31.0
